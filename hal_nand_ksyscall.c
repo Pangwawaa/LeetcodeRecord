@@ -6,9 +6,7 @@
 
 #if (RHINO_CONFIG_HAL_NAND_SYSCALL > 0)
 
-#include <stdint.h>
-#include "aos/hal/nand.h"
-#include "hal_nand_syscall_arg.h"
+
 
 int32_t sys_hal_nand_init_stub(void *arg)
 {

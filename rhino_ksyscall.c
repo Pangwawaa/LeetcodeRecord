@@ -65,15 +65,6 @@ kstat_t sys_krhino_utask_del_stub(void *arg)
 }
 
 /* ------------------ process ------------------ */
-kstat_t sys_krhino_uprocess_create_stub(void *arg)
-{
-    krhino_uprocess_create_syscall_arg_t *_arg = arg;
-
-    return krhino_uprocess_create(_arg->app_name, _arg->task, _arg->name, _arg->arg,
-                                  _arg->prio, _arg->ticks, _arg->stack_buf,
-                                  _arg->stack_size, _arg->kstack_size,
-                                  _arg->entry, _arg->pid, _arg->autorun);
-}
 
 void sys_krhino_uprocess_exit_stub(void *arg)
 {
